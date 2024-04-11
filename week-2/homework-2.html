@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 2 - Homework 1</title>
+    <style>
+      h1 {
+        color: green;
+        font-size: 40px;
+      }
+      .title {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      div {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      span {
+        font-weight: bold;
+      }
+      .danger-text {
+        color: red;
+      }
+
+      .warning-text {
+        color: forestgreen;
+      }
+
+      .sucess-text {
+        color: pink;
+      }
+      .div {
+        color: orange;
+      }
+
+      .info-text {
+        color: blue;
+      }
+      .italic-text {
+        font-style: italic;
+      }
+      .lightseagreen {color: orange;}
+    </style>
+  </head>
+  <body>
+    <h1>This Is Week 2-Homework1</h1>
+    <div><span class="title">1st </span> text block!</div>
+    <div class="danger-text"><span class="title">2rd </span> text block!</div>
+    <div class="warning-text">
+      <span class="title">3nd</span>
+      <span class="italic-text"> text block!</span>
+    </div>
+    <div class="sucess-text">
+      <span class="title">4th </span><span class="lightseagreen"> text block!</span>
+      </div>
+    </div>
+    <div class="info-text italic-text">
+      <span class="title">5th </span> text block!
+    </div>
+    <script>
+      document
+        .querySelector('.danger-text')
+        .addEventListener('click', function () {
+          alert('Red text is clicked');
+        });
+      document
+        .querySelector('.warning-text')
+        .addEventListener('click', function () {
+          alert('Green text is clicked');
+        });
+      document
+        .querySelector('.sucess-text')
+        .addEventListener('click', function () {
+          alert('Yellow text is clicked');
+        });
+      document
+        .querySelector('.info-text')
+        .addEventListener('click', function () {
+          alert('blue text is click');
+        });
+    </script>
+  </body>
+</html>

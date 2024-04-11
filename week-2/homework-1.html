@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Week 2 - Homework 1</title>
+    <style>
+      h1 {
+        color: green;
+        font-size: 40px;
+      }
+      div {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      span {
+        font-weight: bold;
+      }
+      .danger-text {
+        color: red;
+      }
+
+      .success-text {
+        color: forestgreen;
+      }
+
+      .warning-text {
+        color: orange;
+      }
+
+      .info-text {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This Is Week 2-Homework1</h1>
+    <div><span>1st</span>text block!</div>
+    <div class="danger-text"><span>2rd</span>text block!</div>
+    <div class="warning-text"><span>3nd</span>text block!</div>
+    <div class="sucess-text"><span>4th</span>text block!</div>
+    <div class="info-text"><span>5th</span>text block!</div>
+    <script>
+      document
+        .querySelector('.danger-text')
+        .addEventListener('click', function () {
+          alert('Red text is clicked');
+        });
+      document
+        .querySelector('.warning-text')
+        .addEventListener('click', function () {
+          alert('Green text is clicked');
+        });
+      document
+        .querySelector('.sucess-text')
+        .addEventListener('click', function () {
+          alert('Yellow text is clicked');
+        });
+      document
+        .querySelector('.info-text')
+        .addEventListener('click', function () {
+          alert('blue text is click');
+        });
+    </script>
+  </body>
+</html>
