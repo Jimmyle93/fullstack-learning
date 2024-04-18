@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Layout</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        height: 100vh;
+      }
+      .header {
+        background-color: red;
+      }
+      .body {
+        display: flex;
+        flex: 1;
+      }
+      .content {
+        background: lightblue;
+        flex: 1;
+      }
+      .Item {
+        background-color: #333;
+
+        color: #fff;
+        width: 250px;
+        /* My position is based on me and all my children's position will based on me*/
+        position: relative;
+      }
+
+      .menu-button {
+        /* My position is based on the parent that has position:relative*/
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+
+      .bottom {
+        background-color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Header</div>
+      <div class="body">
+        <div class="Item">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          <button class="menu-button">Menu</button>
+        </div>
+        <div class="content">Content</div>
+      </div>
+      <div class="bottom">
+        <div>Footer 1</div>
+        <div>Footer 2</div>
+      </div>
+    </div>
+  </body>
+</html>
