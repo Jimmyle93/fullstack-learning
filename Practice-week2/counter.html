@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Counter</title>
+  </head>
+  <body>
+    <button class="minusButton">- 1</button>
+    <input class="value-input" type="number" value="0" />
+    <button class="plusButton">+ 1</button>
+  </body>
+  <script>
+    // 1. I want to interact with 2 buttons
+    // 2. Then I need to select those 2 buttons
+    let minusButton = document.querySelector('.minusButton');
+    let plusButton = document.querySelector('.plusButton');
+    let valueInput = document.querySelector('.value-input');
+    let onMinusButtonClick = function () {
+      let currentValue = valueInput.value;
+      let newValue = currentValue - 1;
+      valueInput.value = newValue;
+    };
+
+    minusButton.addEventListener('click', onMinusButtonClick);
+
+    let onPlusButtonClick = function () {
+      let currentValue = valueInput.value;
+      let valueAsNumber = parseInt(currentValue); // convert whatever string to an integer ---> '10' -> 10
+      let newValue = valueAsNumber + 1;
+      valueInput.value = newValue;
+    };
+    plusButton.addEventListener('click', onPlusButtonClick);
+  </script>
+</html>
