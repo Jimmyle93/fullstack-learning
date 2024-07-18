@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML Template</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+      }
+      .container {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 50px;
+      }
+      .fullName {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      input,
+      button {
+        padding: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Enter Your Name</h1>
+      <input type="text" placeholder="First Name" class="firstName" />
+      <input type="text" placeholder="Lastname" class="lastName" />
+      <button class="button">Show Full Name</button>
+      <div class="fullName">Full Name:</div>
+    </div>
+    <script>
+      let firstNameInput = document.querySelector('.firstName');
+      let lastNameInput = document.querySelector('.lastName');
+      let fullNameInput = document.querySelector('.fullName');
+      let button = document.querySelector('.button');
+      let onButtonClicked = function () {
+        let firstName = firstNameInput.value;
+        let lastName = lastNameInput.value;
+        fullNameInput.innerHTML = `Full Name : ${firstName} ${lastName}`;
+      };
+      button.addEventListener('click', onButtonClicked);
+    </script>
+  </body>
+</html>

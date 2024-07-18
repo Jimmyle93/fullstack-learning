@@ -1,0 +1,14 @@
+Requirement
+- When the button is clicked, set the text value of the input to "A button is clicked"
+
+Code
+1. Select the button
+2. Create a button clicked function 
+3. Add event "click" to the button and use the function in step 2
+
+4. WHen the funciton button clicked is called (when user clickes the button)
+5. Select the text input
+6. Set the input text value to "A button is clicked"
+
+
+    
